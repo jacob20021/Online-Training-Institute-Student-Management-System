@@ -1,0 +1,123 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 600;
+  color: #1976d2;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar ul li {
+  margin-left: 20px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #1976d2;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 40px 20px;
+}
+
+/* Form card */
+.form-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+.form-card h1 {
+  margin-bottom: 10px;
+  color: #1976d2;
+}
+.subtitle {
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Inputs */
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+.form-group input:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #125ea2;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #fff;
+  font-size: 13px;
+  color: #555;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
